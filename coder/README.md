@@ -1,14 +1,13 @@
-# Coder deployment
+# PulseProof Coder Template V4
 
-1. Create a Coder template from this `coder/` directory.
-2. Confirm the public repository URL when creating the workspace.
-3. Start the workspace and open the **PulseProof** app.
-4. Record the active Coder workspace and running application in the competition demo.
+This version fixes both startup failures seen in earlier templates:
 
-CLI alternative:
+1. It contains no `pkill -f` call, so the Coder setup shell cannot terminate itself.
+2. Streamlit binds to `::` so the Coder agent's IPv6 application proxy can reach port 8501.
 
-```bash
-cd coder
-coder templates push pulseproof -d .
-coder create pulseproof-demo --template pulseproof
-```
+The startup script also:
+- reuses the persistent virtual environment,
+- runs a real model smoke test before starting Streamlit,
+- writes install logs to `/tmp/pulseproof-install.log`,
+- writes app logs to `/tmp/pulseproof.log`,
+- exits immediately with the Streamlit log if the app process dies.
