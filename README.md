@@ -43,7 +43,7 @@ pulseproof-byte2beat/
 ├── assets/                 # Hero graphic and selected figures
 ├── notebooks/              # Final public Kaggle notebook
 ├── results/                # Verified metrics and audit tables
-├── model/native/           # Native XGBoost, LightGBM, and CatBoost files
+├── model/                  # Frozen demo model bundle
 ├── docs/                   # Write-up, model card, demo script
 ├── coder/                  # Coder Terraform template
 └── data/README.md          # Official data attachment instructions
@@ -67,12 +67,13 @@ streamlit run app.py
 
 ## Coder
 
-The `coder/` directory contains a Terraform template that clones this repository, installs dependencies, starts Streamlit, and exposes the application as a public Coder app. The demo uses native model formats instead of a Python pickle, reducing runtime-version fragility. The competition demo should visibly show the active Coder workspace and the running PulseProof application.
+The `coder/` directory contains the tested Terraform/Docker template that clones this repository, installs dependencies, runs a model smoke test, starts Streamlit, and exposes PulseProof as a Coder app. For direct upload, use [`coder/PulseProof_Coder_Template.zip`](coder/PulseProof_Coder_Template.zip). Working-environment evidence is documented in [`docs/CODER_INTEGRATION.md`](docs/CODER_INTEGRATION.md).
 
 ## Documentation
 
 - [Final Kaggle write-up](docs/KAGGLE_WRITEUP_FINAL.md)
 - [Model card](docs/MODEL_CARD.md)
+- [Coder integration evidence](docs/CODER_INTEGRATION.md)
 - [Demo script](docs/DEMO_SCRIPT.md)
 - [Raw-data access instructions](data/README.md)
 
