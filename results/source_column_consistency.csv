@@ -1,0 +1,5 @@
+Column,Compared patients,Mismatches,Agreement
+cardio,70000,0,1.0
+gluc,70000,0,1.0
+alco,70000,0,1.0
+active,70000,0,1.0

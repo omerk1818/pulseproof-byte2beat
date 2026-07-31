@@ -1,0 +1,7 @@
+Model,Weight
+XGBoost,0.3333333333333333
+LightGBM,0.3333333333333333
+CatBoost,0.3333333333333333
+HistGradientBoosting,0.0
+Extra Trees,0.0
+Random Forest,0.0

@@ -1,0 +1,56 @@
+Model,Fold,Patient overlap
+Dummy prevalence,1,0
+Dummy prevalence,2,0
+Dummy prevalence,3,0
+Dummy prevalence,4,0
+Dummy prevalence,5,0
+Logistic regression,1,0
+Logistic regression,2,0
+Logistic regression,3,0
+Logistic regression,4,0
+Logistic regression,5,0
+Gaussian NB,1,0
+Gaussian NB,2,0
+Gaussian NB,3,0
+Gaussian NB,4,0
+Gaussian NB,5,0
+Shrinkage LDA,1,0
+Shrinkage LDA,2,0
+Shrinkage LDA,3,0
+Shrinkage LDA,4,0
+Shrinkage LDA,5,0
+Random Forest,1,0
+Random Forest,2,0
+Random Forest,3,0
+Random Forest,4,0
+Random Forest,5,0
+Extra Trees,1,0
+Extra Trees,2,0
+Extra Trees,3,0
+Extra Trees,4,0
+Extra Trees,5,0
+HistGradientBoosting,1,0
+HistGradientBoosting,2,0
+HistGradientBoosting,3,0
+HistGradientBoosting,4,0
+HistGradientBoosting,5,0
+MLP,1,0
+MLP,2,0
+MLP,3,0
+MLP,4,0
+MLP,5,0
+XGBoost,1,0
+XGBoost,2,0
+XGBoost,3,0
+XGBoost,4,0
+XGBoost,5,0
+LightGBM,1,0
+LightGBM,2,0
+LightGBM,3,0
+LightGBM,4,0
+LightGBM,5,0
+CatBoost,1,0
+CatBoost,2,0
+CatBoost,3,0
+CatBoost,4,0
+CatBoost,5,0

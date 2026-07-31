@@ -1,0 +1,37 @@
+{
+  "rows_total": 70000,
+  "rows_after_quality_gate": 68560,
+  "unique_patients": 68560,
+  "max_rows_per_patient": 1,
+  "patient_overlap_across_locked_splits": 0,
+  "development_patients": 47992,
+  "calibration_patients": 6856,
+  "locked_test_patients": 13712,
+  "hpo_models": 11,
+  "hpo_successful_trials": 137,
+  "best_tuned_oof_model": "XGBoost",
+  "best_tuned_oof_auc": 0.8002675866324737,
+  "chosen_blend": "Equal tuned top 3",
+  "chosen_calibration": "none",
+  "decision_threshold": 0.5175,
+  "locked_test_auc": 0.8069047870924386,
+  "locked_test_auc_ci": [
+    0.7997197148391169,
+    0.8142606420614487
+  ],
+  "locked_test_pr_auc": 0.7930100843077119,
+  "locked_test_brier": 0.17800858973107622,
+  "locked_test_ece": 0.01051613473911568,
+  "locked_test_balanced_accuracy": 0.7377850750577367,
+  "uncertainty_method": "Probability margin",
+  "selective_coverage": 0.7999562427071178,
+  "selective_accuracy": 0.785030540614459,
+  "source_portable_model": "Portable CatBoost",
+  "source_portable_auc": 0.79908418063219,
+  "external_auc": 0.5486820626080277,
+  "external_auc_ci": [
+    0.5121032230025666,
+    0.5850244948215075
+  ],
+  "domain_classifier_auc": 0.9880558624651965
+}
