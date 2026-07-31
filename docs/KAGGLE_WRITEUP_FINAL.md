@@ -320,6 +320,11 @@ The Media Gallery includes:
 
 The public repository includes both the readable template source and an uploadable `coder/PulseProof_Coder_Template.zip`. Raw competition data are not included.
 
+Public repository:
+https://github.com/omerk1818/pulseproof-byte2beat
+
+Coder template and deployment files:
+https://github.com/omerk1818/pulseproof-byte2beat/tree/main/coder
 ---
 
 ## 14. What did not work
