@@ -305,7 +305,24 @@ This is an intentional scientific decision. A visually impressive multimodal mod
 
 ---
 
-## 13. What did not work
+## 13. Interactive demo and Coder integration
+
+The frozen XGBoost, LightGBM, and CatBoost ensemble is exposed through a Streamlit research application. The interface applies the same physiological input gate used by the analysis, displays the three component-model probabilities, reports the frozen decision threshold, quantifies uncertainty, and can return **ABSTAIN** instead of forcing a classification.
+
+The application was provisioned and launched inside a self-hosted **Coder** workspace using the reproducible Terraform/Docker template included in the public repository under `coder/`. The template clones the repository, installs the pinned runtime dependencies, runs a model smoke test, starts Streamlit, and waits for the application health endpoint before declaring the workspace ready.
+
+The Media Gallery includes:
+
+- the active `pulseproof-demo` Coder workspace in **Running** state;
+- PulseProof opened through the Coder application button;
+- an uncertainty example producing **ABSTAIN**; and
+- an invalid-input example blocked by the physiological validity gate.
+
+The public repository includes both the readable template source and an uploadable `coder/PulseProof_Coder_Template.zip`. Raw competition data are not included.
+
+---
+
+## 14. What did not work
 
 Several expected “improvements” did not deliver:
 
@@ -320,7 +337,7 @@ These are not omitted experiments. They are part of the result.
 
 ---
 
-## 14. Limitations
+## 15. Limitations
 
 - Each patient currently contributes one row, so grouped splitting prevents future leakage but is numerically equivalent to identity-unique row splitting in this release.
 - The datasets are observational.
@@ -335,7 +352,7 @@ These are not omitted experiments. They are part of the result.
 
 ---
 
-## 15. Conclusion
+## 16. Conclusion
 
 PulseProof does not present another cardiovascular classifier and stop at ROC-AUC.
 
